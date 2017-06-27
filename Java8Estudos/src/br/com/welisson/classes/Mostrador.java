@@ -1,4 +1,4 @@
-package br.com.welisson.lambda;
+package br.com.welisson.classes;
 
 import java.util.function.Consumer;
 

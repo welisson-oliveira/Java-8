@@ -1,4 +1,4 @@
-package br.com.welisson.lambda;
+package br.com.welisson.classes;
 
 /**
  * {@link Usuario}
@@ -18,6 +18,15 @@ public class Usuario {
 		this.moderador = false;
 	}
 
+	public Usuario() {
+		this.moderador = false;
+	}
+
+	public Usuario(String nome){
+		this.nome = nome;
+		this.moderador = false;
+	}
+
 	public String getNome(){
 		return nome;
 	}
@@ -34,5 +43,9 @@ public class Usuario {
 		return moderador;
 	}
 
+	@Override
+	public String toString() {
+		return "Usuario: "+getNome();
+	}
 }
 

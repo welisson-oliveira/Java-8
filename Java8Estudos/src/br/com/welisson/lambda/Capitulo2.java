@@ -1,7 +1,7 @@
-package br.com.welisson;
+package br.com.welisson.lambda;
 
-import br.com.welisson.lambda.Mostrador;
-import br.com.welisson.lambda.Usuario;
+import br.com.welisson.classes.Mostrador;
+import br.com.welisson.classes.Usuario;
 
 import java.util.Arrays;
 import java.util.List;
@@ -79,6 +79,8 @@ public class Capitulo2 {
 
 		System.out.println("PQP que fodaaaaaa:");
 		usuarios.forEach(u -> System.out.println(u.getNome()));
+
+		usuarios.forEach(u -> u.tornarModerador());
 
 	}
 }
